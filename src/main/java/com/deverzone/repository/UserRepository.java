@@ -4,7 +4,7 @@ import com.deverzone.model.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- * Created by fan.jin on 2016-10-15.
+ * Created by gavin on 2017. 8. 23..
  */
 public interface UserRepository extends JpaRepository<User, Long> {
     User findByUsername( String username );

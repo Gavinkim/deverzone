@@ -18,7 +18,7 @@ import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 /**
- * Created by fan.jin on 2016-10-19.
+ * Created by gavin on 2017. 8. 23..
  */
 
 @Configuration

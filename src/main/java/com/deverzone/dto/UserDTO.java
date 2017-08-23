@@ -7,19 +7,21 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import javax.validation.constraints.Pattern;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Optional;
 
 /**
- * Created by gs on 2017. 8. 23..
+ * Created by gavin on 2017. 8. 23..
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public final class UserDTO {
     private final String username;
     private final String name;
     private final String password;
+    @Pattern(regexp = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$")
     private final String email;
     private final String phone;
 

@@ -1,7 +1,7 @@
 package com.deverzone.model.user;
 
 /**
- * Created by fan.jin on 2016-10-17.
+ * Created by gavin on 2017. 8. 23..
  */
 public class UserTokenState {
     private String access_token;

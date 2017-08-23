@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by fan.jin on 2016-10-15.
+ * Created by gavin on 2017. 8. 23..
  */
 
 @Entity
@@ -33,7 +33,6 @@ public class User implements UserDetails {
     private String name;
 
     @Column(name = "email", unique = true)
-    @Pattern(regexp = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$")
     private String email;
 
     @Column(name = "mobile")

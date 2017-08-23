@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
- * Created by gs on 2017. 8. 23..
+ * Created by gavin on 2017. 8. 23..
  */
 @Data
 @Entity

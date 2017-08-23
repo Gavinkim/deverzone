@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Created by fan.jin on 2017-05-10.
+ * Created by gavin on 2017. 8. 23..
  */
 
 @RestController

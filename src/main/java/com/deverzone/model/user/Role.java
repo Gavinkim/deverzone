@@ -6,7 +6,7 @@ import org.springframework.security.core.GrantedAuthority;
 import javax.persistence.*;
 
 /**
- * Created by fan.jin on 2016-11-03.
+ * Created by gavin on 2017. 8. 23..
  */
 
 @Entity
