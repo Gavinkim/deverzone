@@ -19,6 +19,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 /**
  * Created by gavin on 2017. 8. 23..
+ * * config file for filter, custom userSerivce etc.
  */
 
 @Configuration

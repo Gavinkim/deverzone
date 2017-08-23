@@ -53,18 +53,3 @@ springboot-jwt-starter/
 - **JWT token TTL**: JWT Tokens are configured to expire after 10 minutes, you can get a new token by signing in again.
 - **Using a different database**: This Starter kit is using an embedded H2 database that is automatically configured by Spring Boot. If you want to connect to another database you have to specify the connection in the *application.yml* in the resource directory. Here is an example for a MySQL DB:
 
-```
-spring:
-  jpa:
-    hibernate:
-      # possible values: validate | update | create | create-drop
-      ddl-auto: create-drop
-  datasource:
-    url: jdbc:mysql://localhost/myDatabase
-    username: myUser
-    password: myPassword
-    driver-class-name: com.mysql.jdbc.Driver
-```
-
-*Hint: For other databases like MySQL sequences don't work for ID generation. So you have to change the GenerationType in the entity beans to 'AUTO' or 'IDENTITY'.*
-
