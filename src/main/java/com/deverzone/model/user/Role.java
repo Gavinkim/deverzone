@@ -1,4 +1,4 @@
-package com.deverzone.model;
+package com.deverzone.model.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
@@ -10,8 +10,8 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name="Authority")
-public class Authority implements GrantedAuthority {
+@Table(name="ROLE")
+public class Role implements GrantedAuthority {
 
     @Id
     @Column(name="id")

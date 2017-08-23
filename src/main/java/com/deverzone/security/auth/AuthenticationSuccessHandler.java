@@ -10,8 +10,8 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.deverzone.model.UserTokenState;
-import com.deverzone.model.User;
+import com.deverzone.model.user.UserTokenState;
+import com.deverzone.model.user.User;
 import com.deverzone.security.TokenHelper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,7 +52,7 @@ public class AuthenticationSuccessHandler extends SimpleUrlAuthenticationSuccess
 		authCookie.setHttpOnly( true );
 		authCookie.setMaxAge( EXPIRES_IN );
 		// Create flag Cookie
-		Cookie userCookie = new Cookie( USER_COOKIE, ( user.getFirstname() ) );
+		Cookie userCookie = new Cookie( USER_COOKIE, ( user.getUsername() ) );
 		userCookie.setPath( "/" );
 		userCookie.setMaxAge( EXPIRES_IN );
 		// Add cookie to response

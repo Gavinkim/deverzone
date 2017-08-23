@@ -1,16 +1,19 @@
-package com.deverzone.security;
+package com.deverzone.v01;
 
 
+import com.deverzone.security.TokenHelper;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
 import org.joda.time.DateTimeUtils;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.test.util.ReflectionTestUtils;
 
 /**
  * Created by fan.jin on 2017-01-08.
  */
+@Ignore
 public class TokenHelperTest {
 
     private TokenHelper tokenHelper;

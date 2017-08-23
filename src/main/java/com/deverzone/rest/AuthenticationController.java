@@ -1,6 +1,6 @@
 package com.deverzone.rest;
 
-import com.deverzone.model.UserTokenState;
+import com.deverzone.model.user.UserTokenState;
 import com.deverzone.security.TokenHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

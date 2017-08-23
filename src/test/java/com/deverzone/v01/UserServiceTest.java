@@ -1,6 +1,7 @@
-package com.deverzone.service;
+package com.deverzone.v01;
 
-import com.deverzone.AbstractTest;
+import com.deverzone.v01.AbstractTest;
+import com.deverzone.service.user.UserService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.AccessDeniedException;

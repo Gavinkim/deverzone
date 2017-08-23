@@ -1,4 +1,4 @@
-package com.deverzone;
+package com.deverzone.v01;
 
 /**
  * Created by fan.jin on 2017-01-14.
@@ -6,6 +6,7 @@ package com.deverzone;
 import com.deverzone.security.auth.TokenAuthenticationFilter;
 import io.restassured.RestAssured;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
+import org.junit.Ignore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +19,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 import javax.annotation.PostConstruct;
 
+@Ignore
 @Configuration
 public class MockMvcConfig {
 

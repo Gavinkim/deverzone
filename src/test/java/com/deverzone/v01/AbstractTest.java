@@ -1,11 +1,13 @@
-package com.deverzone;
+package com.deverzone.v01;
 
-import com.deverzone.model.Authority;
-import com.deverzone.model.User;
+import com.deverzone.Application;
+import com.deverzone.model.user.Role;
+import com.deverzone.model.user.User;
 import com.deverzone.repository.UserRepository;
 import com.deverzone.security.auth.AnonAuthentication;
 import com.deverzone.security.auth.TokenBasedAuthentication;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -20,7 +22,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Ignore
 @RunWith( SpringRunner.class )
 @SpringBootTest(classes = { Application.class })
 public abstract class AbstractTest {
@@ -63,10 +65,10 @@ public abstract class AbstractTest {
 	protected User buildTestUser() {
 
 		User user = new User();
-		Authority userAuthority = new Authority();
-		userAuthority.setName("ROLE_USER");
-		List<Authority> userAuthorities = new ArrayList<>();
-		userAuthorities.add(userAuthority);
+		Role userRole = new Role();
+		userRole.setName("ROLE_USER");
+		List<Role> userAuthorities = new ArrayList<>();
+		userAuthorities.add(userRole);
 		user.setUsername("user");
 		user.setAuthorities(userAuthorities);
 		return user;
@@ -74,13 +76,13 @@ public abstract class AbstractTest {
 
 
     protected User buildTestAdmin() {
-        Authority userAuthority = new Authority();
-        Authority adminAuthority = new Authority();
-        userAuthority.setName("ROLE_USER");
-        adminAuthority.setName("ROLE_ADMIN");
-        List<Authority> adminAuthorities = new ArrayList<>();
-        adminAuthorities.add(userAuthority);
-        adminAuthorities.add(adminAuthority);
+        Role userRole = new Role();
+        Role adminRole = new Role();
+        userRole.setName("ROLE_USER");
+        adminRole.setName("ROLE_ADMIN");
+        List<Role> adminAuthorities = new ArrayList<>();
+        adminAuthorities.add(userRole);
+        adminAuthorities.add(adminRole);
         User admin = new User();
         admin.setUsername("admin");
         admin.setAuthorities(adminAuthorities);

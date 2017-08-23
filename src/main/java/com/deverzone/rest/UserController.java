@@ -1,7 +1,7 @@
 package com.deverzone.rest;
 
-import com.deverzone.model.User;
-import com.deverzone.service.UserService;
+import com.deverzone.model.user.User;
+import com.deverzone.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;

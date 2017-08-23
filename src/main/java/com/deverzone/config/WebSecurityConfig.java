@@ -1,7 +1,7 @@
 package com.deverzone.config;
 
 import com.deverzone.security.auth.*;
-import com.deverzone.service.impl.CustomUserDetailsService;
+import com.deverzone.service.user.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
