@@ -155,4 +155,41 @@ public class UserServiceImpl implements UserService {
             throw new Exception(e);
         }
     }
+
+    @Override
+    public boolean deleteAll() throws Exception {
+        try {
+            userRepository.deleteAll();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean createUserDTOList(List<UserDTO> userDTOs) throws Exception {
+        List<User> userList = new ArrayList<>();
+        try {
+            for (UserDTO userDTO: userDTOs) {
+                userList.add(userDtoToUser(userDTO));
+            }
+            userRepository.save(userList);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean createUserList(List<User> users) throws Exception {
+        try {
+            userRepository.save(users);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 }

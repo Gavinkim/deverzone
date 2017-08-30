@@ -20,4 +20,10 @@ public interface UserService {
     boolean delete(Long id) throws Exception;
     boolean changePassword(Long id, String password) throws Exception;
     boolean update(UserDTO userDTO) throws Exception;
+
+    boolean deleteAll() throws Exception;
+
+    boolean createUserDTOList(List<UserDTO> userDTOs) throws Exception;
+
+    boolean createUserList(List<User> users) throws Exception;
 }
