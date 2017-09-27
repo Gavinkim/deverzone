@@ -1,4 +1,4 @@
-package com.deverzone.model.support;
+package com.deverzone.domain.support;
 
 import lombok.Data;
 

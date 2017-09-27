@@ -1,18 +1,17 @@
-package com.deverzone.model.support;
+package com.deverzone.domain.support;
 
 import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by gavin on 2017. 8. 23..
  */
 @Data
 @Entity
-@Table(name="QNA")
-public class QnA {
+@Table(name="NOTICE")
+public class Notice {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -23,7 +22,4 @@ public class QnA {
     @Column(name = "content",length = 1000,nullable = false)
     private String content;
     private Date register;
-    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-    @JoinColumn(name = "qna_id")
-    private List<Comment> comments;
 }

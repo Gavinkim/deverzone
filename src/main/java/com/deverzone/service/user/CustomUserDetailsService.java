@@ -1,6 +1,6 @@
 package com.deverzone.service.user;
 
-import com.deverzone.model.user.User;
+import com.deverzone.domain.user.User;
 import com.deverzone.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

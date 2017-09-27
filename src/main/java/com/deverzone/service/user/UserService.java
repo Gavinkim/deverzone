@@ -1,7 +1,7 @@
 package com.deverzone.service.user;
 
-import com.deverzone.dto.UserDTO;
-import com.deverzone.model.user.User;
+import com.deverzone.webmodel.UserDTO;
+import com.deverzone.domain.user.User;
 
 import java.util.List;
 

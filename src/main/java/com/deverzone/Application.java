@@ -1,9 +1,9 @@
 package com.deverzone;
 
-import com.deverzone.dto.UserDTO;
-import com.deverzone.model.user.Role;
-import com.deverzone.model.user.User;
+import com.deverzone.domain.user.Role;
+import com.deverzone.domain.user.User;
 import com.deverzone.service.user.UserService;
+import com.deverzone.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -36,8 +36,11 @@ public class Application {
 		userAdmin.setUsername("admin");
 		List<Role> rolesAdmins = new ArrayList<>();
 		Role roleAdmin = new Role();
-		roleAdmin.setName("ROLE_ADMIN");
+		roleAdmin.setName(Constants.ROLE_ADMIN);
 		rolesAdmins.add(roleAdmin);
+		Role roleUser1 = new Role();
+		roleUser1.setName(Constants.ROLE_USER);
+		rolesAdmins.add(roleUser1);
 		userAdmin.setAuthorities(rolesAdmins);
 
 		User user = new User();
@@ -49,7 +52,7 @@ public class Application {
 		user.setUsername("user");
 		List<Role> roleUsers = new ArrayList<>();
 		Role roleUser= new Role();
-		roleUser.setName("ROLE_USER");
+		roleUser.setName(Constants.ROLE_USER);
 		roleUsers.add(roleUser);
 		user.setAuthorities(roleUsers);
 

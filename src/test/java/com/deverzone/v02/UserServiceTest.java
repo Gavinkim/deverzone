@@ -1,7 +1,7 @@
 package com.deverzone.v02;
 
 import com.deverzone.Application;
-import com.deverzone.dto.UserDTO;
+import com.deverzone.webmodel.UserDTO;
 import com.deverzone.service.user.UserService;
 import org.junit.Ignore;
 import org.junit.Test;

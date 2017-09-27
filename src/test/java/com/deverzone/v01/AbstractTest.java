@@ -1,8 +1,8 @@
 package com.deverzone.v01;
 
 import com.deverzone.Application;
-import com.deverzone.model.user.Role;
-import com.deverzone.model.user.User;
+import com.deverzone.domain.user.Role;
+import com.deverzone.domain.user.User;
 import com.deverzone.repository.UserRepository;
 import com.deverzone.security.auth.AnonAuthentication;
 import com.deverzone.security.auth.TokenBasedAuthentication;

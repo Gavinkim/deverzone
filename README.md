@@ -7,19 +7,30 @@
 
 ### File Structure
 ```
-springboot-jwt-starter/
+deverzone/
  ├──src/                                                        * our source files
  │   ├──main
  │   │   ├──java.com.deverzone
  │   │   │   ├──config
  │   │   │   │   └──WebSecurityConfig.java                      * config file for filter, custom userSerivce etc.
  │   │   │   ├──model
- │   │   │   │   ├──Authority.java
- │   │   │   │   ├──CustomUserDetail.java                       * custom UserDetail implemtation
- │   │   │   │   ├──UserTokenState.java                         * JWT model
- │   │   │   │   └──User.java                                   * our main user model.
+ │   │   │   │   ├──user
+ │   │   │   │   │   ├──Authority.java
+ │   │   │   │   │   ├──CustomUserDetail.java                   * custom UserDetail implemtation
+ │   │   │   │   │   ├──UserTokenState.java                     * JWT model
+ │   │   │   │   │   └──User.java                               * our main user model.
+ │   │   │   │   └──support
+ │   │   │   │       ├──Comment.java                            * surpport comment model.
+ │   │   │   │       ├──FAQ.java                                * surpport FAQ model.
+ │   │   │   │       ├──Notice.java                             * surpport Notice model.
+ │   │   │   │       └──QnA.java                                * surpport QnA model.
  │   │   │   ├──repository                                      * repositories folder for accessing database
- │   │   │   │   └──UserRepository.java
+ │   │   │   │   ├──RoleRepository                              * role repository
+ │   │   │   │   ├──UserRepository.java                         * user reposiroty
+ │   │   │   │   ├──CommentRepository.java                      * comment reposiroty
+ │   │   │   │   ├──FAQRepository.java                          * FAQ reposiroty
+ │   │   │   │   ├──QnARepository.java                          * QnA reposiroty
+ │   │   │   │   └──NoticeRepository.java                       * Notice reposiroty
  │   │   │   ├──rest                                            * rest endpoint folder
  │   │   │   │   ├──AuthenticationController.java               * auth related REST controller, refresh token endpoint etc.
  │   │   │   │   └──UserController.java                         * REST controller to handle User related requests
@@ -32,17 +43,21 @@ springboot-jwt-starter/
  │   │   │   │   │   ├──RestAuthenticationEntryPoint.java       * handle auth exceptions, like invalid token etc.
  │   │   │   │   │   ├──TokenAuthenticationFilter.java          * the JWT token filter, configured in WebSecurityConfig
  │   │   │   │   │   └──TokenBasedAuthentication.java           * this is our custom Authentication class and it extends AbstractAuthenticationToken.
- │   │   │   │   └──TokenHelper.java                             * token helper class
+ │   │   │   │   └──TokenHelper.java                            * token helper class
  │   │   │   ├──service
- │   │   │   │   ├──impl
+ │   │   │   │   ├──user
+ │   │   │   │   │   ├──UserService.java                        * userService interface
  │   │   │   │   │   ├──CustomUserDetailsService.java           * custom UserDatilsService implementataion, tells formLogin() where to check username/password
  │   │   │   │   │   └──UserServiceImpl.java
- │   │   │   │   └──UserService.java
+ │   │   │   │   └──support
+ │   │   │   │       ├──CommentService.java                     * CommentService class
+ │   │   │   │       ├──FAQService.java                         * userService class
+ │   │   │   │       ├──NoticeService.java                      * NoticeService class
+ │   │   │   │       └──QnAServiceImpl.java                     * QnAService class
  │   │   │   └──Application.java                                * Application main enterance
  │   │   └──recources
  │   │       ├──static                                          * static assets are served here(Angular and html templates)
- │   │       ├──application.yml                                 * application variables are configured here
- │   │       └──import.sql                                      * h2 database query(table creation)
+ │   │       └──application.properties                          * application variables are configured here
  │   └──test                                                    * Junit test folder
  └──pom.xml                                                     * what maven uses to manage it's dependencies
 ```

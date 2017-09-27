@@ -10,8 +10,8 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.deverzone.model.user.UserTokenState;
-import com.deverzone.model.user.User;
+import com.deverzone.domain.user.UserTokenState;
+import com.deverzone.domain.user.User;
 import com.deverzone.security.TokenHelper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;

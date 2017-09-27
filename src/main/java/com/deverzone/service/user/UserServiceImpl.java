@@ -1,10 +1,9 @@
 package com.deverzone.service.user;
 
-import com.deverzone.dto.UserDTO;
-import com.deverzone.model.user.Role;
-import com.deverzone.model.user.User;
+import com.deverzone.webmodel.UserDTO;
+import com.deverzone.domain.user.Role;
+import com.deverzone.domain.user.User;
 import com.deverzone.repository.UserRepository;
-import com.deverzone.service.user.UserService;
 import com.deverzone.utils.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

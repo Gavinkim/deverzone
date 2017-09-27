@@ -1,4 +1,4 @@
-package com.deverzone.model.user;
+package com.deverzone.domain.user;
 
 /**
  * Created by gavin on 2017. 8. 23..

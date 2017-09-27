@@ -1,6 +1,6 @@
 package com.deverzone.repository;
 
-import com.deverzone.model.user.User;
+import com.deverzone.domain.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

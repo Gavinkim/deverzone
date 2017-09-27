@@ -1,4 +1,4 @@
-package com.deverzone.model.user;
+package com.deverzone.domain.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;

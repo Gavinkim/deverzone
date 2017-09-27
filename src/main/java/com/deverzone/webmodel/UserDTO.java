@@ -1,6 +1,6 @@
-package com.deverzone.dto;
+package com.deverzone.webmodel;
 
-import com.deverzone.model.user.User;
+import com.deverzone.domain.user.User;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
