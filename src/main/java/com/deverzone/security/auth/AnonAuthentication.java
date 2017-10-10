@@ -3,7 +3,7 @@ package com.deverzone.security.auth;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 
 /**
- * Created by fan.jin on 2017-04-04.
+ * Created by gavin on 2017. 8. 23..
  */
 
 public class AnonAuthentication extends AbstractAuthenticationToken {

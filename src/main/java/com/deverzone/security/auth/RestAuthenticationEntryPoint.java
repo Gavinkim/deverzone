@@ -1,7 +1,7 @@
 package com.deverzone.security.auth;
 
 /**
- * Created by fan.jin on 2016-11-12.
+ * Created by gavin on 2017. 8. 23..
  */
 
 import org.springframework.security.core.AuthenticationException;

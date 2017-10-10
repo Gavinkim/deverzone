@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by fan.jin on 2017-05-06.
+ * Created by gavin on 2017. 8. 23..
  */
 @Component
 public class LogoutSuccess implements LogoutSuccessHandler {

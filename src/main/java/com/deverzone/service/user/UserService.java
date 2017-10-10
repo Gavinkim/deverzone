@@ -6,7 +6,7 @@ import com.deverzone.domain.user.User;
 import java.util.List;
 
 /**
- * Created by fan.jin on 2016-10-15.
+ * Created by gavin on 2017. 8. 23..
  */
 public interface UserService {
     User findById(Long id);

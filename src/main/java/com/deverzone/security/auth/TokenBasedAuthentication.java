@@ -5,7 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 
 /**
- * Created by fan.jin on 2016-11-11.
+ * Created by gavin on 2017. 8. 23..
  */
 public class TokenBasedAuthentication extends AbstractAuthenticationToken {
 
