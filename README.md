@@ -7,8 +7,8 @@
 ### Description
 ```java
 1. Language: Java
-2. Backend Framwork: Spring boot
-3. Front Framwork : AngularJS 1.x
+2. Backend Framework: Spring boot
+3. Front Framework : AngularJS 1.x
 ```
 
 ### File Structure
